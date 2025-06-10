@@ -1,0 +1,145 @@
+/* Navbar.css - Custom animations and hover effects */
+.navbar,
+.navbar * {
+  font-weight: bold !important;
+}
+/* Navbar Brand Hover Animation */
+.navbar-brand {
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Ensure search button text is bold */
+.btn-outline-success {
+  font-weight: bold !important;
+}
+
+/* Navigation Links Hover Animation */
+.nav-link {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #333 !important;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Underline animation effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Search Form Hover Animation */
+.form-control {
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.form-control:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+  border-color: #333;
+}
+
+.form-control:focus {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  border-color: #333;
+}
+
+/* Search Button Hover Animation */
+.btn-outline-success {
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.btn-outline-success:hover {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  color: white !important;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Profile Section Hover Animation */
+.profile-section {
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.profile-section:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.profile-section:hover span {
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.profile-section:hover svg {
+  color: #333 !important;
+  transform: scale(1.1);
+}
+
+/* Profile Icon Animation */
+.profile-section svg {
+  transition: all 0.3s ease;
+}
+
+/* Navbar Toggle Button Hover */
+.navbar-toggler {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Smooth navbar background transition */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+/* Add glow effect to entire navbar on hover */
+.navbar:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-link:hover {
+    transform: translateX(5px);
+  }
+
+  .navbar-brand:hover {
+    transform: scale(1.05);
+  }
+}
