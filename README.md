@@ -71,60 +71,60 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # 🎯 Full-Stack Event Management & E-Commerce Web Application
 
-A **fully functional web application** developed using **React**, **PHP (API backend)**, **Tailwind CSS**, and **MySQL**.
-This project integrates **event management**, **product sales (POS)**, **chat support**, and **report generation** into one complete system.
+A **fully functional web application** developed using **React**, **PHP (API backend)**, **Tailwind CSS**, and **MySQL Database**.
+This project integrates **event management**, **product sales (POS)**, **chat support**, and **report generation** into one complete system with multi-role access control.
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Layer    | Technology            |
-| -------- | --------------------- |
-| Frontend | React, Tailwind CSS   |
-| Backend  | PHP REST API          |
-| Database | MySQL                 |
-| Tools    | Vite, Axios, Composer |
+| Layer           | Technology                      |
+| --------------- | ------------------------------- |
+| **Frontend**    | React, Tailwind CSS, Vite       |
+| **Backend**     | PHP RESTful API                 |
+| **Database**    | MySQL                           |
+| **Realtime**    | WebSockets / AJAX for live chat |
+| **Build Tools** | npm, Composer                   |
 
 ---
 
 ## 🚀 Core Features
 
-* 🔐 **User Authentication** – secure login and signup with role-based access
-* 🛍️ **E-Commerce Module** – add to cart, order, and checkout (Cash on Delivery)
-* 💬 **Live Chat System** – real-time communication between users and support team
-* 📅 **Event Management** – admins can create, update, and schedule events
-* 🧾 **Billing System** – users can view their payment and bill history
-* 📊 **Admin Dashboard** – daily, weekly, and monthly sales reports
-* 👥 **Role Management** – Admin, User, and Support roles
-* 🖼️ **Product Management** – CRUD operations for inventory and events
+* 🛍️ **E-Commerce System** — Product listings, shopping cart, checkout
+* 💵 **Payment Options** — Cash on Delivery (COD)
+* 🧾 **Billing System** — Generates and stores order history and bills
+* 💬 **Live Chat** — Real-time customer and support communication
+* 📅 **Event Management** — Admin can add, schedule, and manage events
+* 📊 **Reports Dashboard** — Daily, Weekly, and Monthly revenue reports
+* 👥 **Role-based Access** — Admin, User, and Support roles
+* 📦 **Product Management** — CRUD operations for inventory control
+* 🌐 **Responsive UI** — Clean and modern design with Tailwind CSS
 
 ---
 
-## 🧠 System Overview
+## 🧠 User Roles
 
-### User Roles
-
-| Role        | Description                                 |
-| ----------- | ------------------------------------------- |
-| **Admin**   | Manage events, products, reports, and users |
-| **User**    | Browse events, make orders, view billing    |
-| **Support** | Handle live chats and user requests         |
+| Role        | Access & Responsibilities                       |
+| ----------- | ----------------------------------------------- |
+| **Admin**   | Manage products, events, reports, and user data |
+| **User**    | Browse products/events, make orders, view bills |
+| **Support** | Handle live chat and user inquiries             |
 
 ---
 
-## 🛠️ Installation Guide
+## ⚙️ Installation & Setup
 
-### 1️⃣ Backend Setup
+### 1️⃣ Backend Setup (PHP + MySQL)
 
 ```bash
 cd backend
 composer install
 cp .env.example .env
-# Update database credentials
+# Update .env with your MySQL credentials
 php -S localhost:8000 -t public
 ```
 
-### 2️⃣ Frontend Setup
+### 2️⃣ Frontend Setup (React)
 
 ```bash
 cd frontend
@@ -132,49 +132,56 @@ npm install
 npm run dev
 ```
 
-* The frontend will run at: **[http://localhost:5173/](http://localhost:5173/)**
-* Backend API base URL example: `http://localhost/kaizen-backend/api/`
+Frontend URL: `http://localhost:5173`
+Backend API: `http://localhost/kaizen-backend/`
 
 ---
 
 ## 🖼️ Screenshots
 
-### 🏠 Home Page – Public Site
+### 🏠 Home Page
 
 ![Home](screenshot/home.png)
 
-### 🎨 Event Categories
+### 🛒 Shopping / Product Page
 
-![Categories](src/assets/catagory.png)
+![Shop](screenshot/shop.png)
 
-### 💬 User Testimonials
+### 👜 Bag Page
 
-![Testimonials](src/assets/showall.png)
+![Bag](screenshot/bag.png)
 
-### 📅 Event Calendar View
+### 🥾 Footwear Page
 
-![Calendar](src/assets/sheduleveent.png)
+![Footwear](screenshot/footware.png)
 
-### 🔐 Login & Authentication
+### 🛍️ Cart Overview
 
-![Login](src/assets/login.png)
+![Cart](screenshot/cart.png)
 
-### 📋 Event Listings (Admin)
+### 💵 Payment Page
 
-![List Events](src/assets/listevent.png)
+![Payment](screenshot/payment.png)
 
-### ➕ Add Photographer Modal
+### 🧾 Bill / Order History
 
-![Add Photographer](src/assets/addphotographer.png)
+![Bill](screenshot/bill.png)
 
-### 📊 Admin Dashboard Overview
+### 🧰 Product Management
 
-![Admin Dashboard](src/assets/admindashboard.png)
+![Manage Product](screenshot/manageproduct.png)
 
-### 🧑‍💼 About Us (Company Info)
+### 📅 Event Schedule
 
-![About](src/assets/about.png)
-![About 2](src/assets/about2.png)
+![Schedule](screenshot/shedule.png)
+
+### 📊 Sales Report (Admin)
+
+![Report](screenshot/report.png)
+
+### 💬 Support Chat
+
+![Support Chat](screenshot/support.png)
 
 ---
 
@@ -183,28 +190,41 @@ npm run dev
 ```
 E-Commerce-Web/
  ├── src/
- │   ├── assets/           # Images, icons, static files
- │   ├── components/       # Reusable components (Navbar, Hero, etc.)
- │   ├── pages/            # Page routes (Home, Shop, Login, etc.)
- │   ├── backend/          # PHP API handlers
+ │   ├── assets/          # All screenshots and media files
+ │   ├── components/      # UI components (Navbar, Hero, Banner, etc.)
+ │   ├── pages/           # Page routes (Home, Login, Bag, etc.)
+ │   ├── backend/         # PHP API logic
  │   └── App.jsx
  ├── public/
  ├── package.json
- ├── postcss.config.js
  ├── tailwind.config.js
  └── README.md
 ```
 
 ---
 
-## 📧 Author
+## 🧾 Reports & Dashboard
+
+* Admin can view **sales analytics** by day, week, or month.
+* Access **order statistics** and generate printable summaries.
+* Manage **inventory levels** and event schedules from a single dashboard.
+
+---
+
+## 👨‍💻 Author
 
 **Niven Asmitha Liyanage**
-📩 [nivenasmitha345@gmail.com](mailto:nivenasmitha345@gmail.com)
+📧 [nivenasmitha345@gmail.com](mailto:nivenasmitha345@gmail.com)
+
+---
+
+## 💡 License
+
+This project is open-source and free to use for educational and development purposes.
 
 ---
 
 ## ⭐ Support
 
-If you like this project, don’t forget to **star 🌟 the repo** and share your feedback!
+If you like this project, don’t forget to **star 🌟 the repo** and share it with others!
 
