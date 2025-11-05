@@ -68,3 +68,143 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# 🎯 Full-Stack Event Management & E-Commerce Web Application
+
+A **fully functional web application** developed using **React**, **PHP (API backend)**, **Tailwind CSS**, and **MySQL**.
+This project integrates **event management**, **product sales (POS)**, **chat support**, and **report generation** into one complete system.
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer    | Technology            |
+| -------- | --------------------- |
+| Frontend | React, Tailwind CSS   |
+| Backend  | PHP REST API          |
+| Database | MySQL                 |
+| Tools    | Vite, Axios, Composer |
+
+---
+
+## 🚀 Core Features
+
+* 🔐 **User Authentication** – secure login and signup with role-based access
+* 🛍️ **E-Commerce Module** – add to cart, order, and checkout (Cash on Delivery)
+* 💬 **Live Chat System** – real-time communication between users and support team
+* 📅 **Event Management** – admins can create, update, and schedule events
+* 🧾 **Billing System** – users can view their payment and bill history
+* 📊 **Admin Dashboard** – daily, weekly, and monthly sales reports
+* 👥 **Role Management** – Admin, User, and Support roles
+* 🖼️ **Product Management** – CRUD operations for inventory and events
+
+---
+
+## 🧠 System Overview
+
+### User Roles
+
+| Role        | Description                                 |
+| ----------- | ------------------------------------------- |
+| **Admin**   | Manage events, products, reports, and users |
+| **User**    | Browse events, make orders, view billing    |
+| **Support** | Handle live chats and user requests         |
+
+---
+
+## 🛠️ Installation Guide
+
+### 1️⃣ Backend Setup
+
+```bash
+cd backend
+composer install
+cp .env.example .env
+# Update database credentials
+php -S localhost:8000 -t public
+```
+
+### 2️⃣ Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+* The frontend will run at: **[http://localhost:5173/](http://localhost:5173/)**
+* Backend API base URL example: `http://localhost/kaizen-backend/api/`
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page – Public Site
+
+![Home](src/assets/home.png)
+
+### 🎨 Event Categories
+
+![Categories](src/assets/catagory.png)
+
+### 💬 User Testimonials
+
+![Testimonials](src/assets/showall.png)
+
+### 📅 Event Calendar View
+
+![Calendar](src/assets/sheduleveent.png)
+
+### 🔐 Login & Authentication
+
+![Login](src/assets/login.png)
+
+### 📋 Event Listings (Admin)
+
+![List Events](src/assets/listevent.png)
+
+### ➕ Add Photographer Modal
+
+![Add Photographer](src/assets/addphotographer.png)
+
+### 📊 Admin Dashboard Overview
+
+![Admin Dashboard](src/assets/admindashboard.png)
+
+### 🧑‍💼 About Us (Company Info)
+
+![About](src/assets/about.png)
+![About 2](src/assets/about2.png)
+
+---
+
+## 📂 Folder Structure
+
+```
+E-Commerce-Web/
+ ├── src/
+ │   ├── assets/           # Images, icons, static files
+ │   ├── components/       # Reusable components (Navbar, Hero, etc.)
+ │   ├── pages/            # Page routes (Home, Shop, Login, etc.)
+ │   ├── backend/          # PHP API handlers
+ │   └── App.jsx
+ ├── public/
+ ├── package.json
+ ├── postcss.config.js
+ ├── tailwind.config.js
+ └── README.md
+```
+
+---
+
+## 📧 Author
+
+**Niven Asmitha Liyanage**
+📩 [nivenasmitha345@gmail.com](mailto:nivenasmitha345@gmail.com)
+
+---
+
+## ⭐ Support
+
+If you like this project, don’t forget to **star 🌟 the repo** and share your feedback!
+
