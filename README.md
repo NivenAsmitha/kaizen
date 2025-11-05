@@ -141,7 +141,7 @@ npm run dev
 
 ### 🏠 Home Page – Public Site
 
-![Home](src/assets/home.png)
+![Home](screenshot/home.png)
 
 ### 🎨 Event Categories
 
